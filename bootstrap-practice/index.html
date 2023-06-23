@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap - Practice</title>
+        <!-- CDN pour CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <!-- CDN pour icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container-xxl">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-bootstrap-fill text-primary me-2"></i>
+                        <span class="fw-bold text-secondary">
+                            Cours Bootstrap
+                        </span>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#header"
+                                >
+                                    Accueil
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#topics">
+                                    A propos du livre
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Avis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item ms-lg-3 mb-2 mb-lg-0">
+                                <a class="btn btn-secondary" href="#price">
+                                    Acheter
+                                </a>
+                            </li>
+                            <li class="nav-item ms-lg-2">
+                                <a class="btn btn-secondary" href="#">Cours</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="container-lg py-5 my-5" id="header">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h1 class="display-2">Bootstrap</h1>
+                        <h2 class="display-6">Apprendre à coder</h2>
+                        <p class="lead text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem cupiditate error assumenda amet, harum
+                            ut vel animi expedita obcaecati
+                        </p>
+                        <a href="#pricing" class="btn btn-secondary btn-lg">
+                            Acheter!
+                        </a>
+                    </div>
+                    <div class="d-none d-md-block col-md-5">
+                        <img
+                            src="https://bootstrapcreative.com/wp-bc/wp-content/uploads/2018/04/reference-guide-cover-3d.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="price"
+                class="bg-light py-5 my-5 container-md text-center"
+            >
+                <h2>Les formules</h2>
+                <p class="lead text-muted">Choisir une formule:</p>
+
+                <!-- Cards -->
+                <div class="row g-0 align-items-center justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-8 col-md-4 col-xl-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <h3 class="card-title">Starter Edition</h3>
+                                <p class="card-subtitle lead">
+                                    Téléchargement du cours
+                                </p>
+                                <p class="display-5 text-primary fw-bold my-4">
+                                    12.99$
+                                </p>
+                                <p
+                                    class="card-text text-secondary d-none d-md-block"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quidem, totam.
+                                </p>
+                                <a href="" class="btn btn-outline-primary">
+                                    Acheter!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Card 1 -->
+
+                    <!-- Card 2 -->
+                    <div class="col-9 col-md-4">
+                        <div class="card border-success border-2">
+                            <div class="card-header text-center text-primary">
+                                Formule populaire
+                            </div>
+                            <div class="card-body text-center py-5">
+                                <h3 class="card-title">Complete Edition</h3>
+                                <p class="card-subtitle lead">
+                                    Téléchargement du cours et mise à jour
+                                </p>
+                                <p class="display-5 text-primary fw-bold my-4">
+                                    15.99$
+                                </p>
+                                <p
+                                    class="card-text text-secondary d-none d-md-block"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quidem, totam.
+                                </p>
+                                <a href="" class="btn btn-outline-primary">
+                                    Acheter!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Card 2 -->
+
+                    <!-- Card 3 -->
+                    <div class="col-8 col-md-4 col-xl-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <h3 class="card-title">Ultimate Edition</h3>
+                                <p class="card-subtitle lead">
+                                    Téléchargement e-book et mises à jour et
+                                    plus !
+                                </p>
+                                <p class="display-5 text-primary fw-bold my-4">
+                                    19.99$
+                                </p>
+                                <p
+                                    class="card-text text-secondary d-none d-md-block"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quidem, totam.
+                                </p>
+                                <a href="" class="btn btn-outline-primary">
+                                    Acheter!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Card 3 -->
+                </div>
+            </section>
+
+            <!-- topics -->
+            <section class="bg-light py-5 my-5 container-md" id="topics">
+                <!-- titre et sous titre -->
+                <div class="text-center">
+                    <h2>A propos du livre...</h2>
+                    <p class="lead text-muted">
+                        Vous retrouverai dans le livre
+                    </p>
+                </div>
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-6 col-lg-4">
+                        <img
+                            src="https://www.pngitem.com/pimgs/m/109-1096303_books-vector-png-download-open-book-vector-png.png
+                "
+                            alt="Image contenu"
+                            class="img-fluid"
+                        />
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Composant accordeon -->
+                        <div class="accordion" id="chapters">
+                            <!-- accordion item 1 -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="heading-1">
+                                    <button
+                                        class="accordion-button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#chapter-1"
+                                        aria-expanded="true"
+                                        aria-controls="chapter-1"
+                                    >
+                                        1/ Couleurs et typographie
+                                    </button>
+                                </h3>
+                                <div
+                                    class="accordion-collapse collapse show"
+                                    id="chapter-1"
+                                    aria-labelledby="heading-1"
+                                    data-bs-parent="#chapters"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Harum
+                                            obcaecati odit numquam asperiores
+                                            maxime voluptatum doloremque nihil
+                                            optio aperiam nobis, placeat
+                                            doloribus eligendi rem a repudiandae
+                                            ad voluptatem aliquid. Distinctio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin accordion item 1 -->
+                            <!-- accordion item 1 -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="heading-2">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#chapter-2"
+                                        aria-expanded="false"
+                                        aria-controls="chapter-2"
+                                    >
+                                        2/ Buttons
+                                    </button>
+                                </h3>
+                                <div
+                                    class="accordion-collapse collapse"
+                                    id="chapter-2"
+                                    aria-labelledby="heading-2"
+                                    data-bs-parent="#chapters"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Harum
+                                            obcaecati odit numquam asperiores
+                                            maxime voluptatum doloremque nihil
+                                            optio aperiam nobis, placeat
+                                            doloribus eligendi rem a repudiandae
+                                            ad voluptatem aliquid. Distinctio?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin accordion item 1 -->
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+        <!-- CDN pour Js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
